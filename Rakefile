@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{placeholder}
   gem.description = %Q{placeholder for long description}
   gem.email = "squirtgun@kerrizor.com"
-  gem.authors = ["Kerri Miller"]
+  gem.authors = ["Kerri Miller", "Chris Doyle"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
