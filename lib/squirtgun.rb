@@ -18,7 +18,7 @@ module Squirtgun
       # TODO: add message format testing?  Guzzler currenlty expects [context]:[value]..
 
       sock = UDPSocket.new
-      sock.send({:stat => options, :hmac => encode_packet(options[:context] + options[:value], Squirt::SECRET_KEY)}.to_json, 0, Squirt::LISTENER, Squirt::LISTENER_PORT)
+      sock.send({:stat => options, :hmac => encode_packet(options[:context] + options[:value], Squirtgun::SECRET_KEY)}.to_json, 0, Squirtgun::LISTENER, Squirtgun::LISTENER_PORT)
       sock.close
     end
 
